@@ -29,7 +29,7 @@ router.get('/:id', (req, res) => {
       .catch(err => res.status(404).json({ norestaurantfound: 'No Restaurant found'}));
 })
 
-// @route POST api/restaurant
+// @route POST api/restaurants
 // @description add/save Restaurant
 // @access Public
 router.post('/', (req, res) => {
