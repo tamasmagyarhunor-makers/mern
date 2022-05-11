@@ -1,0 +1,4 @@
+{
+    "mongoURI": "mongodb+srv://<mongo-atlas-username>:<mongo-atlas-user-password>@cluster0.ndcrq.mongodb.net/<dbname>?retryWrites=true&w=majority"
+}
+
