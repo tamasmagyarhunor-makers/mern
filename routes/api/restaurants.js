@@ -6,9 +6,6 @@ const router = express.Router();
 // Load restaurants controller
 const restaurants = require('../../controllers/restaurant.controller');
 
-// Load Restaurant model
-const Restaurant = require('../../models/Restaurant');
-
 // @route GET api/restaurants/test
 // @description tests restaurants route
 // @access Public
@@ -34,9 +31,9 @@ router.post('/', restaurants.create);
 // @access Public
 router.put('/:id', restaurants.update);
   
-// @route DELETE api/restaurant/:id
+// @route DELETE api/restaurants/:id
 // @description Delete Restaurant by id
 // @access Public
 router.delete('/:id', restaurants.delete);
-  
+
 module.exports = router;
