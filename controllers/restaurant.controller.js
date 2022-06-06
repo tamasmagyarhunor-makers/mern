@@ -10,7 +10,10 @@ exports.create = (req, res) => {
 
     // Create a Restaurant
    Restaurant.create(req.body)
-      .then(restaurant => res.json({ msg: 'Restaurant added successfully' }))
+      .then(restaurant => res.json({
+          msg: 'Restaurant added successfully',
+          restaurant_created: restaurant
+        }))
       .catch(err => res.status(400).json({ error: 'Unable to add this Restaurant' }));
 }
 
